@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>GTC x SK</title>
+  <link rel="icon" type="image/png" href="img/gtc-removebg-preview 1.svg">
+  <style>
+    /* style footer */
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 3rem 1rem;
+    }
+
+    .footer a {
+      color: #6c757d;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #343a40;
+      text-decoration: underline;
+    }
+
+    h6 {
+      font-size: smaller;
+      font-weight: 320;
+    }
+
+    /* style hero */
+    .hero-section {
+      background: url("img/herobg.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+      min-height: 100vh;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      /* Overlay hitam transparan */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-green {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .btn-green:hover {
+      background-color: #218838;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* style instansi */
+    .logo-img {
+      height: 90px;
+      object-fit: contain;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    /* style keunggulan */
+    .circle-bg {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.2;
+    }
+
+    .circle-orange {
+      background-color: orange;
+      width: 150px;
+      height: 150px;
+      top: 20px;
+      left: 30px;
+    }
+
+    .circle-blue {
+      background-color: blue;
+      width: 120px;
+      height: 120px;
+      top: 120px;
+      left: 100px;
+    }
+
+    .circle-green {
+      background-color: green;
+      width: 100px;
+      height: 100px;
+      top: 80px;
+      left: 0;
+    }
+
+    .check-icon {
+      color: orange;
+      margin-right: 8px;
+    }
+
+    .gtc-btn {
+      background-color: orange;
+      color: white;
+      border: none;
+    }
+
+    .gtc-btn:hover {
+      background-color: darkorange;
+    }
+
+    .check-icon {
+      color: orange;
+      margin-right: 8px;
+    }
+
+    .circle-bg {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    .card-text {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .spanduk-section {
+      background: url("img/herobg.jpg") no-repeat center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 50vh;
+      color: white;
+    }
+
+    .gtc-orange {
+      color: orange;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <div class="logo">
+        <a class="navbar-brand d-flex align-items-center mx-2" href="#">
+          <img src="img/gtc-removebg-preview 1.svg" alt="gtc" height="50" />
+          <img src="img/sk.svg" alt="sahabatkarir" height="50" />
+        </a>
+      </div>
+      <!-- hamburger untuk mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- isi navbar -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gatotkaca
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="gtc/binjas.html">Gatotkaca Binjas</a></li>
+              <li><a class="dropdown-item" href="gtc/gatfit.html">Gatotkaca Fitness</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sahabat Karir
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="karir/tgr.html">Sahabat Karir Tangerang</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="karir/linggau.html">Sahabat Karir Lubuk Linggau</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Siswa & Alumni</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Kalkulator</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit">
+          Masuk/Daftar
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <div class="hero-section d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h4 class="fw-bold text-warning">
+            BIMBINGAN AKADEMIK DAN JASMANI <br />
+            PERSIAPAN TES TNI, POLRI, SEKOLAH <br />
+            KEDINASAN DAN CPNS
+          </h4>
+          <h2 class="fw-bold text-white mt-3">
+            GATOTKACA TRAINING CLUB & SAHABAT KARIR
+          </h2>
+          <p class="mt-3">
+            Bersama kami, wujudkan masa depan gemilang sebagai abdi negara
+            yang berkarakter dan profesional!
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#kontak" class="btn btn-warning btn-lg">Hubungi Kami</a>
+            <a href="#program" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0 d-none d-md-block">
+          <img src="img/taruni.svg" alt="Taruni" class="hero-img" width="400"">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- instansi -->
+    <section class=" info-section py-5 text-center">
+          <div class="container">
+            <!-- logo instansi -->
+            <div class="d-flex justify-content-center flex-wrap align-items-center gap-3 mb-4">
+              <img src="img/tni.svg" alt="logo-tni" class="logo-img" />
+              <img src="img/kemendagri.svg" alt="logo-kemendagri" class="logo-img" />
+              <img src="img/kemhan.svg" alt="logo-kemhan" class="logo-img" />
+              <img src="img/bin.svg" alt="logo-bin" class="logo-img" />
+              <img src="img/polri.svg" alt="logo-polri" class="logo-img" />
+            </div>
+
+            <h5 class="fw-bolder text-primary">
+              Gatotkaca Training Club & Sahabat Karir
+            </h5>
+            <p class="text-warning fw-semibold">
+              Wujudkan Cita-cita Menjadi Abdi Negara Bersama Gatotkaca Training Club
+              & Sahabat Karir
+            </p>
+
+            <p class="text-muted fw-normal">
+              Gatotkaca Training Club & Sahabat Karir adalah lembaga bimbingan
+              belajar dan pelatihan khusus untuk persiapan seleksi TNI, POLRI, dan
+              Sekolah Kedinasan. Kami berkomitmen membantu siswa dalam meraih
+              kesuksesan dan lolos seleksi dengan strategi yang tepat dan terarah.
+            </p>
+          </div>
+          </section>
+
+          <!-- keunggulan -->
+          <div class="container py-5 position-relative">
+            <!-- Background circles -->
+            <div class="circle-bg circle-orange position-absolute"></div>
+            <div class="circle-bg circle-blue position-absolute"></div>
+            <div class="circle-bg circle-green position-absolute"></div>
+
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center position-relative">
+                <img src="img/keunggulan.svg" alt="Pembina" class="img-fluid" style="max-height: 350px;" />
+              </div>
+              <div class="col-md-8">
+                <h4 class="fw-bold mb-4 text-primary">
+                  Kenapa Harus Memilih Bimbel di <br />
+                  <span class="gtc-orange">Gatotkaca Training Club & Sahabat Karir?</span>
+                </h4>
+                <ul class="list-unstyled">
+                  <li class="mb-3">
+                    <i class="check-icon">✔️</i>
+                    <strong>Pengajar dan Pelatih Berpengalaman</strong><br />
+                    Didukung oleh tenaga ahli yang kompeten dan berpengalaman di bidangnya.
+                  </li>
+                  <li class="mb-3">
+                    <i class="check-icon">✔️</i>
+                    <strong>Try Out Berkala dan Realistis</strong><br />
+                    Simulasi tes yang dilakukan secara berkala dengan format yang sesuai dengan tes sesungguhnya.
+                  </li>
+                  <li class="mb-3">
+                    <i class="check-icon">✔️</i>
+                    <strong>Kurikulum Terstruktur dan Up-to-Date</strong><br />
+                    Materi dan soal selalu diperbarui agar relevan dengan perkembangan terbaru.
+                  </li>
+                  <li class="mb-3">
+                    <i class="check-icon">✔️</i>
+                    <strong>Sistem Pembelajaran yang Efektif</strong><br />
+                    Metode pembelajaran berbasis semi-pendekatan yang mengoptimalkan pemahaman dan keterampilan.
+                  </li>
+                  <li>
+                    <i class="check-icon">✔️</i>
+                    <strong>Digitalisasi dalam Pembelajaran dan Manajemen</strong><br />
+                    Didukung oleh teknologi digital untuk proses pembelajaran dan manajemen yang lebih efisien.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Section: Program Bimbingan Jasmani -->
+            <div class="text-center mb-4">
+              <img src="img/gtc-removebg-preview 1.svg" alt="logo-gtc" class="mb-1 mt-5" style="height: 75px;">
+              <h5 class="fw-bold text-primary">Program Bimbingan Jasmani</h5>
+              <h6 class="gtc-orange fw-bold">Gatotkaca Training Club</h6>
+              <p class="mt-3">
+                Kami menyediakan program bimbingan jasmani yang lengkap dan sesuai dengan standar tes sesungguhnya untuk
+                membantu siswa mempersiapkan seleksi masuk TNI, Polri, dan Sekolah Kedinasan.
+                Tak hanya itu, kami juga menawarkan program personal training bagi anda yang ingin meningkatkan
+                kebugaran,
+                menjaga kesehatan dan memiliki tubuh yang ideal.
+                <br><br>
+              </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+              <!-- Card BINSIK -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow">
+                  <img src="img/herobg.jpg" class="card-img-top" alt="Program BINSIK" />
+                  <div class="card-body">
+                    <h6 class="text-primary fw-bold"><span class="badge bg-primary text-light mb-2">GATOTKACA
+                        BINSIK</span></h6>
+                    <h5 class="card-title">Akademi Polri/TNI & Kedinasan</h5>
+                    <p class="card-text">
+                      Program intensif yang dirancang untuk membantu Anda mencapai kesiapan fisik terbaik dalam
+                      menghadapi
+                      seleksi TNI, Polri, dan Sekolah Kedinasan.
+                    </p>
+                    <a href="#" class="btn gtc-btn">Info Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card GATFIT -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow">
+                  <img src="img/Athlete Photo Shoot @ BK Strength 1.svg" class="card-img-top" alt="Program GATFIT" />
+                  <div class="card-body">
+                    <h6 class="text-warning fw-bold"><span class="badge bg-primary text-light mb-2">GATOTKACA
+                        FITNESS</span>
+                    </h6>
+                    <h5 class="card-title">Personal Training</h5>
+                    <p class="card-text">
+                      Program personal training eksklusif untuk meningkatkan daya tahan tubuh, membentuk postur ideal,
+                      serta
+                      menjaga kesehatan dan kebugaran optimal.
+                    </p>
+                    <a href="#" class="btn gtc-btn">Info Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="spanduk-section d-flex align-items-center py-4">
+            <div class="container">
+              <div class="d-flex flex-column flex-md-row align-items-center">
+                <!-- Teks -->
+                <div class="text-center text-md-start">
+                  <h2 class="fw-bold text-primary">
+                    Sudah Siapkah Bergabung Bersama
+                  </h2>
+                  <h2 class="fw-bold gtc-orange">Gatotkaca Training Club</h2>
+                  <p>Hubungi Kami via Whatsapp atau Daftarkan Diri Anda Sekarang!</p>
+                </div>
+                <!-- logo -->
+                <img src="img/gtc-removebg-preview 1.svg" alt="Logo-gtc" class="img-fluid ms-md-auto mt-3 mt-md-0"
+                  style="height: 150px; max-height: 25vw" />
+              </div>
+              <div class="d-flex flex-column flex-md-row gap-2 justify-content-center justify-content-md-start mt-4">
+                <a href="#program" class="btn btn-success btn-sm btn-md-lg">Hubungi Kami</a>
+                <a href="#program" class="btn gtc-btn btn-sm btn-md-lg">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+          <!-- card Sahabat Karir -->
+          <div class="container py-5">
+            <div class="text-center mb-4">
+              <img src="img/sk.svg" alt="logo-sk" class="mb-1 mt-3" style="height: 75px">
+              <h5 class="fw-bold text-primary">
+                Program Bimbingan Akademi & Jasmani
+              </h5>
+              <h6 class="gtc-orange fw-bold">Sahabat Karir</h6>
+              <p class="mt-3">
+                Kami menyediakan program bimbingan akademik dan jasmani yang lengkap serta sesuai dengan standar tes
+                sesungguhnya untuk membantu peserta menghadapi seleksi masuk TNI, Polri, Sekolah Kedinasan, hingga CPNS.
+                Program
+                ini juga dilengkapi dengan tryout rutin guna mengukur kesiapan dan meningkatkan peluang keberhasilan
+                dalam
+                menghadapi tes.<br /><br />
+              </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+              <!-- Card Akpol -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow">
+                  <img src="img/herobg.jpg" class="card-img-top" alt="Akademi Kepolisian" />
+                  <div class="card-body">
+                    <span class="badge bg-warning text-dark mb-2">Bimbel & Binjas</span>
+                    <h5 class="card-title">Akademi Kepolisian</h5>
+                    <p class="card-text">
+                      Program Bimbel fokus untuk seleksi Akpol, Bintara, SIPSS dan
+                      Tantama Kepolisian dengan sistem belajar yang terarah dan
+                      terstruktur.
+                    </p>
+                    <a href="#" class="btn gtc-btn">Info Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Akmil -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow">
+                  <img src="img/herobg.jpg" class="card-img-top" alt="Akademi TNI" />
+                  <div class="card-body">
+                    <span class="badge bg-warning text-dark mb-2">Bimbel & Binjas</span>
+                    <h5 class="card-title">Akademi TNI</h5>
+                    <p class="card-text">
+                      Program Bimbel untuk TNI: Akademi Militer (Akmil), AAL, AAU,
+                      Bintara, dan Tamtama. Sistem belajar dan latihan fisik terpadu.
+                    </p>
+                    <a href="#" class="btn gtc-btn mt-4">Info Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Kedinasan -->
+              <div class="col-md-4">
+                <div class="card h-100 shadow">
+                  <img src="img/herobg.jpg" class="card-img-top" alt="Sekolah Kedinasan" />
+                  <div class="card-body">
+                    <span class="badge bg-warning text-dark mb-2">Bimbel & Binjas</span>
+                    <h5 class="card-title">Sekolah Kedinasan</h5>
+                    <p class="card-text">
+                      Program Bimbel terfokus untuk seleksi kedinasan STAN, IPDN,
+                      STIN, STIS, POLTEKIM dan lainnya. Dilengkapi akademik, psikotes,
+                      dan simulasi CAT.
+                    </p>
+                    <a href="#" class="btn gtc-btn">Info Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spanduk-section d-flex align-items-center py-4">
+          <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+              <!-- Teks -->
+              <div class="text-center text-md-start">
+                <h2 class="fw-bold text-primary">
+                  Sudah Siapkah Bergabung Bersama
+                </h2>
+                <h2 class="fw-bold gtc-orange">Sahabat Karir</h2>
+                <p>Hubungi Kami via Whatsapp atau Daftarkan Diri Anda Sekarang!</p>
+              </div>
+              <!-- logo -->
+              <img src="img/sk.svg" alt="Logo-sk" class="img-fluid ms-md-auto mt-3 mt-md-0"
+                style="height: 150px; max-height: 25vw" />
+            </div>
+            <div class="d-flex flex-column flex-md-row gap-2 justify-content-center justify-content-md-start mt-4">
+              <a href="#program" class="btn btn-success btn-sm btn-md-lg">Hubungi Kami</a>
+              <a href="#program" class="btn gtc-btn btn-sm btn-md-lg">Daftar Sekarang</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer mt-auto py-5 border-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md text-center text-md-start mb-4 px-3 px-md-5">
+                <img src="img/gtc-removebg-preview 1.svg" alt="logogtc" height="70px">
+                <h5 class="text-primary fw-bold">Gatotkaca Training Club</h5>
+                <h6>Bimbingan Jasmani & Pelatihan Masuk TNI-Polri dan Kedinasan</h6>
+                <hr />
+                <ul class="list-unstyled text-small">
+                  <li>More Info :</li>
+                  <li>
+                    <a class="link-secondary" href="https://wa.me/62895353710274" target="_blank"><i
+                        class="fab fa-whatsapp"></i> +62 895353710274</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://www.instagram.com/gtc.club" target="_blank"><i
+                        class="fab fa-instagram"></i> @gtc.club</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://www.tiktok.com/gtctrainingclub" target="_blank"><i
+                        class="fab fa-tiktok"></i> @gtctrainingclub</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://maps.app.goo.gl/pLrNidWNRPJ7yj8Z8" target="_blank"><i
+                        class="fas fa-map-marker-alt"></i> Lapangan Ahmad Yani
+                      Kota Tangerang</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md text-center text-md-start mb-4 px-3 px-md-5">
+                <img src="img/sk.svg" alt="logosk" height="70px">
+                <h5 class="text-warning fw-bold">Sahabat Karir</h5>
+                <h6>Bimbingan Akademik dan Tryout untuk Masuk TNI, Polri, Sekolah Kedinasan, serta Tes CPNS</h6>
+                <hr />
+                <ul class="list-unstyled text-small">
+                  <li>Sahabat Karir Tangerang :</li>
+                  <li>
+                    <a class="link-secondary" href="https://wa.me/62895353710274" target="_blank"><i
+                        class="fab fa-whatsapp"></i> +62 895353710274</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://www.instagram.com/gtc.club" target="_blank"><i
+                        class="fab fa-instagram"></i> @gtc.club</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://www.tiktok.com/gtctrainingclub" target="_blank"><i
+                        class="fab fa-tiktok"></i> @gtctrainingclub</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://maps.app.goo.gl/pLrNidWNRPJ7yj8Z8" target="_blank"><i
+                        class="fas fa-map-marker-alt"></i> Lapangan Ahmad Yani
+                      Kota Tangerang</a>
+                  </li>
+                  <hr />
+                  <li>Sahabat Karir Lubuk Lubuklinggau</li>
+                  <li>
+                    <a class="link-secondary" href="https://wa.me/62895353710274" target="_blank"><i
+                        class="fab fa-whatsapp"></i> +62 895353710274</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://www.instagram.com/gtc.club" target="_blank"><i
+                        class="fab fa-instagram"></i> @gtc.club</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://www.tiktok.com/gtctrainingclub" target="_blank"><i
+                        class="fab fa-tiktok"></i> @gtctrainingclub</a>
+                  </li>
+                  <li>
+                    <a class="link-secondary" href="https://maps.app.goo.gl/gDQCnxNarB5fZQee9" target="_blank"><i
+                        class="fas fa-map-marker-alt"></i> Tabah Jemekeh Jl. Yos
+                      Sudarso RT 04 NO 22 Kota Lubuklinggau</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md text-center text-md-start mb-4 px-3 px-md-5">
+                <h5 class="fw-bold">Menu</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Gatotkaca Training Club</a></li>
+                  <li><a href="#">Sahabat Karir</a></li>
+                  <li><a href="#">Siswa & Alumni</a></li>
+                  <li><a href="#">Berita</a></li>
+                  <li><a href="#">Kalkulator</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <p class="text-muted">
+                &copy; 2025 Gatotkaca Training Club, Sahabat Karir. All rights
+                reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
